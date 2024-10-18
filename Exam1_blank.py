@@ -17,7 +17,7 @@ def print_1():	#DO NOT CHANGE THIS LINE
 def fix_prices_2(buy_price, sell_price):	#DO NOT CHANGE THIS LINE
 
     #TODO 2A
-    
+    print()
     
     return(buy_price, sell_price)	#DO NOT CHANGE THIS LINE
     
