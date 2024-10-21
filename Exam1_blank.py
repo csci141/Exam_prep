@@ -24,9 +24,9 @@ def fix_prices_2(buy_price, sell_price):	#DO NOT CHANGE THIS LINE
 def calculate_profit_3(buy_price, sell_price):		#DO NOT CHANGE THIS LINE
     
     #TODO 3A
-    answer3a = 0
+    profit = 0
    
-    return(answer3a)	#DO NOT CHANGE THIS LINE
+    return(profit)	#DO NOT CHANGE THIS LINE
     
 def set_barcode_4(product_name):	#DO NOT CHANGE THIS LINE
       
@@ -35,12 +35,12 @@ def set_barcode_4(product_name):	#DO NOT CHANGE THIS LINE
     
     
     #TODO 4B
-    prefix = 0000
+    prefix = "0000"
 
 
     return(prod_num, prefix)  #DO NOT CHANGE THIS LINE
 
-def check_inventory_5(have_amount, want_amount):    #DO NOT CHANGE THIS LINE
+def check_inventory_5(inventory_amount, order_amount):    #DO NOT CHANGE THIS LINE
     
     #TODO 5a
     have_enough = True
@@ -67,7 +67,7 @@ def set_sale_6(days_since, last_sale):           #DO NOT CHANGE THIS LINE
     #TODO 6c
    
 
-    return(sale_amount) #DO NOT CHANGE THIS LINE
+    return(sale_percent) #DO NOT CHANGE THIS LINE
 
 
 def user_choice_loop_7():           #DO NOT CHANGE THIS LINE          
@@ -92,25 +92,25 @@ def main(): 			        #DO NOT CHANGE THIS LINE
     # Nothing in Main will be graded, so you can use this to help with debugging 
     
 
-    print("----Running print_intro_1...")
+      print("----Running print_intro_1...")
     print_1()
    
-    print("----Running data_type_2....")
+    print("----Running data_type_2()....")
     print("returns: ", fix_prices_2(1, "3") )
     
-    print("----Running calculate_profit_3....")
+    print("----Running calculate_profit_3()....")
     print("returns: ", calculate_profit_3(1.0, 2.0))
     
     print("----Running set_barcode_4() ...")
     print("returns: ", set_barcode_4("E-Bike") )
 
-    print("----Running check_inventory_5...")
+    print("----Running check_inventory_5()...")
     print("returns: ", check_inventory_5(10,5))
 
-    print("---- set_sale_6...")
-    set_sale_6(3, 20)
+    print("----Running set_sale_6()...")
+    print("returns: ", set_sale_6(3, 20))
     
-    print("---- user_choice_loop_7...")
+    print("---- user_choice_loop_7()...")
     user_choice_loop_7()
 
 
