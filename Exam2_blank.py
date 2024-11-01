@@ -10,62 +10,67 @@ def print_calculated_profit123(buy_price, sell_price):
     #TODO 123B
       
     #TODO 123C
-   
+   percent_profit = 0
    return(percent_profit)
 
 def set_barcode_4(product_name):	#DO NOT CHANGE THIS LINE
       
     #TODO 4A
-
+    prefix = "0000"
+    
     return(prefix)  #DO NOT CHANGE THIS LINE
 
 def reorder_56(inventory_amount, order_amount, holiday):           #DO NOT CHANGE THIS LINE           
    
+   #use argument inventory_amount, assume it's an integer
     #TODO 56A   
       
     #TODO 56B  
     
     #TODO 56C
-
+    order_quantity = 0
     return(order_quantity) #DO NOT CHANGE THIS LINE
 
-def hype_8(num):
+def hype_8(num): #DO NOT CHANGE THIS LINE
     #TODO 8A
+    pass
     
-def turtle_9(super_time):
+def display_time_9(super_time): #DO NOT CHANGE THIS LINE
     
-    import turtle
-    t = turtle.Turtle()
     #TODO 9A
       
     #TODO 9B
-      
+    pass  
+
+
 #TODO 10A
+   
 
 time_zone = "PST"
-def time_zone_11(zone):
+def time_zone_11(zone): #DO NOT CHANGE THIS LINE
     
     #TODO 11A
     
-    return(time_zone)
+    return(time_zone) #DO NOT CHANGE THIS LINE
     
-def time_in_super_time_12(time_tuple):
+def time_in_super_time_12(time_tuple): #DO NOT CHANGE THIS LINE
     
     #TODO 12A
       
-    #TODO 12B use the to_super_10 function to 
+    #TODO 12B 
      
-    return(standard_min, standard_sec, super_time)
+    return(standard_min, standard_sec, super_time) #DO NOT CHANGE THIS LINE
 
 def user_choice_loop_7():           #DO NOT CHANGE THIS LINE          
     
-    print_1() #DO NOT CHANGE THIS LINE
-    choice_text = "[f]ix prices, [c]alc profits, set [b]arcode, [i]nventory check, [s]et sale, or [q]uit:" #DO NOT CHANGE THIS LINE
+    #print_1() #DO NOT CHANGE THIS LINE
+    choice_text = "[p]rint profits, [c]alc profits, set [b]arcode, [r]reorder, [d]isplay time, update time[z]one, [s]how time in super time or [q]uit:" #DO NOT CHANGE THIS LINE
     
-    #TODO 7a
-      
+    #TODO 7a          
+        
+        
     #TODO 7b
-         
+    loop_count =0      
     return(loop_count) #DO NOT CHANGE THIS LINE
 
 
@@ -77,16 +82,13 @@ def main(): 			        #DO NOT CHANGE THIS LINE
     # Nothing in Main will be graded, so you can use this to help with debugging 
     
     print("----print_calculated_profit123...")
-     print("returns: ", print_calculated_profit123(10, 30))
+    print("returns: ", print_calculated_profit123(10, 30))
    
     print("----Running set_barcode_4() ...")
     print("returns: ", set_barcode_4("E-Bike") )
 
     print("----reorder_56()...")
     print("returns: ", reorder_56(5,10 , True))
-
-    print("----Running set_sale_6()...")
-    print("returns: ", set_sale_6(3, 20))
      
     print("---- user_choice_loop_7()...")
     user_choice_loop_7()
