@@ -29,7 +29,8 @@ def user_choice_loop_7():           #DO NOT CHANGE THIS LINE
 
     #TODO 7A
    
-    poem = "emerging epic"
+   
+    poem = ""
     loop_count = 0
 
         
@@ -67,15 +68,17 @@ def make_multiline_poem_8(num_of_stanzas, poem_as_dict, random_mode): #DO NOT CH
 
 
 def add_punctuation_13(poem_line, index_num): #DO NOT CHANGE THIS LINE
-    #assume 'poem_line' is a string and 'index' is an integer
+    #assume 'poem_line' is a string and 'index_num' is an integer
     #TODO 13A
     
-    return(new_poem_line) #DO NOT CHANGE THIS LINE
+    #return(new_poem_line) #DO NOT CHANGE THIS LINE
+    pass
 
 def make_fancy_14(poem_line):#DO NOT CHANGE THIS LINE
     #assume 'poem_line' is a string
              
-    #TODO 14A
+    #TODO
+    pass
    
 
     return(poem_line) #DO NOT CHANGE THIS LINE
@@ -99,7 +102,7 @@ def make_list_from_string_15(text):#DO NOT CHANGE THIS LINE
 
 def make_line_from_lists_15(starts, rhymes, bridges, num):#DO NOT CHANGE THIS LINE
     #assume 'starts', 'rhymes', and 'bridges' are lists of strings with at least one item in them, 
-    # and 'line_num' is an integer which may be positive, negative, or 0
+    # and 'num' is an integer which may be positive, negative, or 0
     
     #TODO 15B
    
@@ -115,14 +118,14 @@ def read_file_16(file_name):#DO NOT CHANGE THIS LINE
     #assume 'file_name' is the name of a valid file with text in it
     
     #TODO 16A
-   
+    all_text = ""
     return all_text  #DO NOT CHANGE THIS LINE
     
 def write_file_16(poem, file_name): #DO NOT CHANGE THIS LINE
     #assume poem is a string and file_name is a string ending in ".txt"
     
     #TODO 16B
-   
+    pass
 
  
 def gather_poem_parts_17(starts_list, rhymes_list, bridges_list):#DO NOT CHANGE THIS LINE
@@ -148,24 +151,24 @@ def main(): 			        #DO NOT CHANGE THIS LINE
     random_mode = False #for testing purposes we won't randomize the poems
   
     print("\n---- user_choice_loop_7()...")
-    user_choice_loop_7()
+    print("returns:", user_choice_loop_7())
 
     temp_start = ["start0", "start1", "the", "THE", "I've never seen a poem as lovely as a"]
     temp_rhyme = ["rhyme0", "rhyme1", "the", "THE", "tree"]
     temp_bridge = ["bridge0", "bridge1", "the", "THE", "amid the search for meaning deep"]
-
-    print("\n----make_multiline_poem_8...")
     temp_dict = {"starts": temp_start, "rhymes": temp_rhyme, "bridges": temp_bridge}
+    
+    print("\n----make_multiline_poem_8...")
     print(make_multiline_poem_8(3, temp_dict, False))
 
-    print("\n----make_multiline_poem_8...")
+    print("\n----make_list_from_string_15...")
     temp_text = "start0:start1:the:THE"
     print(make_list_from_string_15(temp_text))
 
     print("\n----make_title_10...")
     first = ['The', "A", "My", "Why"]
     second = ["Dream", "Mirage", "Vision", "Not"]
-    print(make_title_10(first, second))
+    #print(make_title_10(first, second))
 
     print("\n----add_punctuation_13...")
     poem_line_temp = "Let the rain"
@@ -175,6 +178,7 @@ def main(): 			        #DO NOT CHANGE THIS LINE
     print("\n----make_dramatic_14...")
     poem_line_temp = "can swirl rainbow tails"
     print("returns: ", make_dramatic_14(poem_line_temp))
+ 
 
     print("\n----make_fancy_14...")
     poem_line_temp = "Let the rain"
