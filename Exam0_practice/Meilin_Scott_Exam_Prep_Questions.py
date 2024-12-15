@@ -1,3 +1,14 @@
+# Below are a couple of practice problems designed by a former student.
+# Try solving these problems using only your notesheet and time how long it takes you to do each question.
+# Take notes on what slows you down so you can focus your studing on these areas:
+#    - do you know what tools in your toolkit to use to solve each problem?
+#    - did you know how to check if the answer was correct?
+#    - were you unsure about how to turn the concepts covered into running code?
+#    - do you need more syntax examples on your notesheet? 
+#    - do you need more notes on what causes different error messages and how to fix them?
+#    - do you need more practice debugging?
+# Test file is not presented; perhaps this is something _you_ could write for extra credit?
+
 # Name: Meilin Scott
 # Date: 12/5/2024
 # Description: Exam 1 practice questions
