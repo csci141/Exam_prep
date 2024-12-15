@@ -1,0 +1,4 @@
+Overtime Payroll Calculation Instructions:
+1. If the number of overtime hours worked is less than one, the employee will receive no additional pay
+2. For the first one-ten hours of overtime worked in a month, the employee will receive 1.5x their regular hourly wage
+3. For any hour an employee worked in a month past 10 hours of overtime, the employee will receive 2x their regular hourly wage
