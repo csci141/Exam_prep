@@ -1,3 +1,17 @@
+# This is a practice final exam written by a past 141 student, Lacie Pauw. 
+# The Skel is final_exam.py which uses the files overtime.txt and pay_instruct.txt . 
+# You can see a worked example at final_exam_answers.py . 
+# This sample exam is a bit shorter than a real exam would be but will be very helpful for practicing!
+# Try taking this examw using only your notesheet and time how long it takes you to do each question.
+# Take notes on what slows you down so you can focus your studing on these areas:
+#    - do you understand the concepts covered?
+#    - do you need more syntax examples on your notesheet? 
+#    - do you need more notes on what causes different error messages and how to fix them?
+#    - do you need more practice debugging?
+# Test file is not presented; perhaps this is something _you_ could write for extra credit?
+
+
+
 #TODO 0A: Your Name
 
 # Exam instructions
