@@ -2,7 +2,9 @@
 #Date Dec 5th
 #Description: Proposed Final Exam Questions
 
-
+# This example has a number of practice functions to write.
+# Try solving them to practice for the final exam.
+# There is no main() or test code : perhaps this is something you'll write for extra credit?
 
 #The story for this code is a Diamond Store
 
@@ -76,10 +78,3 @@ def thank_you_message(message):
     
     
 
-
-#For loops
-# end= and sep=
-# Turtles
-#Write a function
-#Scope errror
-#Tuples
