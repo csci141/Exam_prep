@@ -1,0 +1,135 @@
+import sys
+
+# As writing test cases is part of the course objectives, practice by writing your own 
+#  testing tables
+#  print statements to check behavior
+# While there are many ways to solve each of these prompts, one correct answer is at the bottom of your file
+
+#todo1
+#customers entering the store need to know we carry the best products
+#welcome them with a "Welcome to our store, We carry the freshest products"
+
+
+
+#todo2
+#our store's computers receive information about prices as strings
+#assign the information received to a float so we can properly integrate the prices with our software
+
+apples = "1.99"
+bananas = ".99"
+
+
+
+#todo3
+#everything in the store is on a sale for 10% off
+#apply the sale to the variables
+#then save the customers savings and show the customer "You saved" and their savings amount
+
+apples = 1.99
+
+
+#todo4
+#our computers use binary codes for the product barcodes
+#our checkers use key codes that correspond to the product
+#today we need you to connect to the two for our checkers
+#convert the binary numbers into decimal numbers and save the result in original variable
+
+apples = 1001
+bananas = 1110
+
+
+
+#todo5
+#our checkers want to have a break
+#create a program that determines if it's time for a break
+#they can take their break up to 3 hours after their last break but it must be at least 1 and a half hours
+#use minutes as the measurement of time to solve this problem, not hours
+#return the boolean breaktime so we know we can send them on their break
+
+time_since_break = int(sys.argv[1])
+breaktime = 0
+
+
+   
+#todo5b
+#we also need to organize a lunch for each employee in the schedule
+#check to see if they have been on a break previously
+#if they have had a break before, this break will be their lunch
+#use the variable breaktime and the new variable lunch time to see if its time for their lunch
+   
+lunchtime = 0
+time_since_last_break = int(sys.argv[2])
+
+
+       
+#todo6
+#our employees cannot be on the floor for more than 3 hours without a break
+#create a program to flag if an employee has exceeded this time and alert management
+#use the variable time_since_break
+#use alert to let them know
+#otherwise it should return False
+
+alert = 0
+
+
+   
+#todo7
+#our employees enter a lot of items into the register throughout the day
+#create a program that can help us print receipts for them
+#this program should show how many items the customer bought and the total price of the items
+#when the employee presses enter, the register needs to know to stop expecting more items and print the total amount of items input and their value
+
+
+
+######################################################
+            A N S W E R S
+######################################################
+
+#todo1 answer
+print("Welcome to our store, We carry the freshest products")
+
+#todo2 answer
+apples = float(apples)
+bananas = float(bananas)
+
+
+#todo3 answer
+applessavings = .1*(apples)
+print(f"You saved {applessavings}")
+
+
+#todo4 answer
+apples = 9
+bananas = 14
+
+# todo5 answer
+if (time_since_break > 89) and (time_since_break < 181):
+    breaktime = True
+
+
+#todo5b answer
+if (time_since_last_break > 89) and (time_since_last_break < 181):
+    if breaktime == True:
+        lunchtime = True
+
+
+#todo6 answer
+if time_since_break > 180:
+    alert = True
+else:
+    alert = False
+
+
+#todo7 answer
+total = 0
+productcount = 0
+productinput = input("Item price:")
+
+while productinput != "enter":
+    if productinput != "enter":
+        productinput = float(productinput)
+        total += productinput
+        productcount +=1
+        productinput = input("Item price:")
+print(total)
+print(productcount)
